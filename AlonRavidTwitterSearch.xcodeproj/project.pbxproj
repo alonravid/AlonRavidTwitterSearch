@@ -10,6 +10,7 @@
 		9D65F8061EA4987000556829 /* AlonRavidTwitterSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D65F7FC1EA4987000556829 /* AlonRavidTwitterSearch.framework */; };
 		9D65F80B1EA4987000556829 /* AlonRavidTwitterSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D65F80A1EA4987000556829 /* AlonRavidTwitterSearchTests.swift */; };
 		9D65F80D1EA4987000556829 /* AlonRavidTwitterSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D65F7FF1EA4987000556829 /* AlonRavidTwitterSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D65F8171EA498A300556829 /* TweetsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D65F8161EA498A300556829 /* TweetsSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9D65F8051EA4987000556829 /* AlonRavidTwitterSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlonRavidTwitterSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D65F80A1EA4987000556829 /* AlonRavidTwitterSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlonRavidTwitterSearchTests.swift; sourceTree = "<group>"; };
 		9D65F80C1EA4987000556829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D65F8161EA498A300556829 /* TweetsSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				9D65F7FF1EA4987000556829 /* AlonRavidTwitterSearch.h */,
 				9D65F8001EA4987000556829 /* Info.plist */,
+				9D65F8161EA498A300556829 /* TweetsSearch.swift */,
 			);
 			path = AlonRavidTwitterSearch;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					9D65F7FB1EA4987000556829 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5D632VWN5D;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					9D65F8041EA4987000556829 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D65F8171EA498A300556829 /* TweetsSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		9D65F8111EA4987000556829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravid.AlonRavidTwitterSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		9D65F8121EA4987000556829 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
@@ -360,6 +368,7 @@
 		9D65F8141EA4987000556829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
 				INFOPLIST_FILE = AlonRavidTwitterSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		9D65F8151EA4987000556829 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5D632VWN5D;
 				INFOPLIST_FILE = AlonRavidTwitterSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
